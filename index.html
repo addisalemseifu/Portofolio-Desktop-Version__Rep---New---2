@@ -48,7 +48,6 @@
     </section>
     
     <section class="grid__wrapper" id="portfolio">
-
     </section>
 
     <section id="popup">
@@ -73,10 +72,10 @@
                     <li class="pla__btn pop-btn" id="eleven">css</li>
                     <li class="pla__btn pop-btn" id="twenlve">javascript</li>
                 </ul>
-                <div class="see_wrapper">
-                <button class="see-project" id="see_pro"><a class="pro_anchor" href="https://addisalemseifu.github.io/Portofolio-Desktop-Version__Rep/">See Live</a><i class="far fa-radar"></i></button>
-                <button class="see-project" id="see_pro1"><a class="pro_anchor" href="https://github.com/addisalemseifu/Portofolio-Desktop-Version__Rep">See Source</a><i class="fab fa-github-square"></i></button>
-                </div>
+                <ul class="see_wrapper">
+                    <li class="see-project" id="see_pro"><a class="pro_anchor" href="https://addisalemseifu.github.io/Portofolio-Desktop-Version__Rep/">See Live</a><i class="far fa-radar"></i></li>
+                    <li class="see-project" id="see_pro1"><a class="pro_anchor" href="https://github.com/addisalemseifu/Portofolio-Desktop-Version__Rep">See Source</a><i class="fab fa-github-square"></i></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -142,10 +141,11 @@
             <p class="description__contact">I am a software developer! I can help you build a product, feature or website look through some of my work and experiance! if you like what you see or have a project you need coded don't hesitate to contact me. </p>
             <form class="main__form" action="https://formspree.io/f/xknkypba" method="post">
                 <input name="name" class="text__input" type="text" placeholder="Addisalem Seifu" maxlength="30" required><br>
-                <input name="email" class="text__input" type="email" placeholder="addisalemseifu@gmail.com" required><br>
+                <input name="email" id="my_email" class="text__input" type="email" placeholder="addisalemseifu@gmail.com" required><br>
                 <textarea name="text" id="message__box" cols="30" rows="5" placeholder="write your message hear" maxlength="500" required></textarea><br>
                 <input class="submit__btn" type="submit">
             </form>
+            <div class="error"></div>
         </div>
     </section>
 
@@ -153,12 +153,14 @@
         <div class="form__wrapper">
             <h3 class="form__title">Contact me!</h3>
             <p class="form__paragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-            <form class="main__form" action="https://formspree.io/f/xknkypba" method="post">
+            <div class="error"></div>
+            <form class="main__form" id="mobielForm" action="https://formspree.io/f/xknkypba" method="post">
                 <input name="name" id="name" class="input__space" type="text" placeholder="Enter your Name" required>
                 <input name="email" id="email" class="input__space" type="email" placeholder="Email adress" required>
                 <textarea class="text__area" name="message" id="message" cols="30" rows="10" placeholder="write your message here" maxlength="500" required></textarea>
                 <button class="input__btn" type="submit">Get it Touch</button>
             </form>
+            <div class="errorMobile">fghfgh</div>
         </div>
     </section>
 
